@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Education</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        /* BODY */
+
+        body{
+            font-family:Arial, sans-serif;
+            background-color:#f4f4f4;
+            color:#333;
+        }
+
+        /* NAVBAR */
+
+        .navbar{
+            position:sticky;
+            top:0;
+            width:100%;
+            background:linear-gradient(90deg, rgb(3,156,167), rgb(0,110,120));
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 40px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            z-index:1000;
+        }
+
+        .logo{
+            color:white;
+            font-size:26px;
+            font-weight:bold;
+            letter-spacing:1px;
+        }
+
+        .nav-links{
+            display:flex;
+            gap:20px;
+        }
+
+        .nav-links a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            padding:10px 18px;
+            border-radius:25px;
+            transition:0.3s ease;
+        }
+
+        .nav-links a:hover{
+            background:white;
+            color:rgb(3,156,167);
+            transform:translateY(-2px);
+        }
+
+        /* CONTAINER */
+
+        .container{
+            max-width:1000px;
+            margin:50px auto;
+            padding:40px;
+            background:white;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.08);
+            text-align:center;
+        }
+
+        .container h1{
+            font-size:40px;
+            margin-bottom:30px;
+            color:rgb(3,156,167);
+        }
+
+        /* TABLE */
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+        }
+
+        table th{
+            background:rgb(3,156,167);
+            color:white;
+            padding:15px;
+            font-size:18px;
+        }
+
+        table td{
+            padding:15px;
+            border:1px solid #ddd;
+            font-size:16px;
+        }
+
+        table tr:nth-child(even){
+            background:#f9f9f9;
+        }
+
+        /* IMAGE */
+
+        .edu-image{
+            margin-top:40px;
+        }
+
+        .edu-image img{
+            width:320px;
+            height:320px;
+            object-fit:cover;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* FOOTER */
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+            font-size:15px;
+        }
+
+        /* MOBILE RESPONSIVE */
+
+        @media(max-width:768px){
+
+            .navbar{
+                flex-direction:column;
+                padding:20px;
+            }
+
+            .nav-links{
+                flex-direction:column;
+                width:100%;
+                margin-top:15px;
+            }
+
+            .nav-links a{
+                width:100%;
+                text-align:center;
+            }
+
+            .container{
+                margin:20px;
+                padding:25px;
+            }
+
+            table{
+                font-size:14px;
+            }
+
+            .edu-image img{
+                width:100%;
+                height:auto;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">Education</div>
+
+        <div class="nav-links">
+            <a href="education.html" target="_blank">Home</a>
+            <a href="education.html" target="_blank">Education</a>
+            <a href="experience.html" target="_blank">Experience</a>
+            <a href="hobbies.html" target="_blank">Hobbies</a>
+            <a href="project.html" target="_blank">Projects</a>
+            <a href="contact.html" target="_blank">Contact Me</a>
+        </div>
+
+    </nav>
+
+    <!-- EDUCATION SECTION -->
+
+    <div class="container">
+
+        <h1>My Education</h1>
+
+        <table>
+
+            <tr>
+                <th>Degree</th>
+                <th>Institute</th>
+                <th>Year</th>
+            </tr>
+
+            <tr>
+                <td>Bachelor in Software Engineering</td>
+                <td>Muhammad Ali Jinnah University</td>
+                <td>2026 - 2030</td>
+            </tr>
+
+            <tr>
+                <td>Intermediate</td>
+                <td>Islamia College</td>
+                <td>2023 - 2025</td>
+            </tr>
+
+        </table>
+
+        <!-- IMAGE -->
+
+        <div class="edu-image">
+
+            <img src="image/maju z.jpg" alt="MAJU">
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        Email: zohaib99080@gmail.com |
+        Phone: +44 20 7946 0000 |
+        Copyright &copy; 2026 My Portfolio
+
+    </footer>
+
+</body>
+</html>

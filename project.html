@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, sans-serif;
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        /* NAVBAR */
+
+        .navbar{
+            position:sticky;
+            top:0;
+            width:100%;
+            background:linear-gradient(90deg,rgb(3,156,167),rgb(0,110,120));
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding:15px 40px;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+            z-index:1000;
+        }
+
+        .logo{
+            color:white;
+            font-size:28px;
+            font-weight:bold;
+        }
+
+        .nav-links{
+            display:flex;
+            gap:20px;
+        }
+
+        .nav-links a{
+            text-decoration:none;
+            color:white;
+            font-weight:bold;
+            padding:10px 18px;
+            border-radius:25px;
+            transition:0.3s ease;
+        }
+
+        .nav-links a:hover{
+            background:white;
+            color:rgb(3,156,167);
+            transform:translateY(-2px);
+        }
+
+        /* MAIN CONTAINER */
+
+        .container{
+            max-width:1100px;
+            margin:50px auto;
+            background:white;
+            padding:40px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.08);
+        }
+
+        .container h1{
+            text-align:center;
+            color:rgb(3,156,167);
+            margin-bottom:15px;
+            font-size:42px;
+        }
+
+        .container p{
+            text-align:center;
+            font-size:18px;
+            margin-bottom:35px;
+            color:#555;
+        }
+
+        /* TABLE */
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+            overflow:hidden;
+            border-radius:10px;
+        }
+
+        table th{
+            background:rgb(3,156,167);
+            color:white;
+            padding:16px;
+            font-size:18px;
+        }
+
+        table td{
+            padding:16px;
+            border:1px solid #ddd;
+            font-size:16px;
+        }
+
+        table tr:nth-child(even){
+            background:#f9f9f9;
+        }
+
+        table tr:hover{
+            background:#eefefe;
+        }
+
+        /* HOBBY IMAGES */
+
+        .image-section{
+            margin-top:50px;
+        }
+
+        .image-section h2{
+            text-align:center;
+            margin-bottom:30px;
+            color:rgb(3,156,167);
+        }
+
+        .image-container{
+            display:flex;
+            justify-content:center;
+            gap:30px;
+            flex-wrap:wrap;
+        }
+
+        .image-card{
+            background:white;
+            padding:20px;
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,0.1);
+            transition:0.3s;
+            text-align:center;
+        }
+
+        .image-card:hover{
+            transform:translateY(-10px);
+        }
+
+        .image-card img{
+            width:280px;
+            height:220px;
+            object-fit:cover;
+            border-radius:15px;
+        }
+
+        .image-card h3{
+            margin-top:15px;
+            color:#333;
+        }
+
+        /* FOOTER */
+
+        footer{
+            background:#222;
+            color:white;
+            text-align:center;
+            padding:20px;
+            margin-top:50px;
+            font-size:15px;
+        }
+
+        /* MOBILE RESPONSIVE */
+
+        @media(max-width:768px){
+
+            .navbar{
+                flex-direction:column;
+                padding:20px;
+            }
+
+            .nav-links{
+                flex-direction:column;
+                width:100%;
+                margin-top:15px;
+            }
+
+            .nav-links a{
+                width:100%;
+                text-align:center;
+            }
+
+            .container{
+                margin:20px;
+                padding:25px;
+            }
+
+            table{
+                font-size:14px;
+            }
+
+            .image-card img{
+                width:100%;
+                height:auto;
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">My Hobbies</div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="education.html">Education</a>
+            <a href="experience.html">Experience</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+
+    </nav>
+
+    <!-- MAIN CONTENT -->
+
+    <div class="container">
+
+        <h1>My Hobbies</h1>
+
+        <p>
+            These are some activities and interests that I enjoy in my free time.
+        </p>
+
+        <!-- TABLE -->
+
+        <table>
+
+            <tr>
+                <th>Hobby</th>
+                <th>Description</th>
+                <th>Experience</th>
+            </tr>
+
+            <tr>
+                <td>Video Editing</td>
+                <td>Creating cinematic and creative videos.</td>
+                <td>2 Years</td>
+            </tr>
+
+            <tr>
+                <td>Coding</td>
+                <td>Building websites and software projects.</td>
+                <td>3 Years</td>
+            </tr>
+
+            <tr>
+                <td>Gaming</td>
+                <td>Playing multiplayer and strategy games.</td>
+                <td>5 Years</td>
+            </tr>
+
+        </table>
+
+        <!-- IMAGE SECTION -->
+
+        <div class="image-section">
+
+            <h2>My Favorite Activities</h2>
+
+            <div class="image-container">
+
+                <div class="image-card">
+                    <img src="./image/editing z.jpg" alt="Editing">
+                    <h3>Video Editing</h3>
+                </div>
+
+                <div class="image-card">
+                    <img src="./image/coding.jpg" alt="Coding">
+                    <h3>Programming</h3>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        Email: zohaib99080@gmail.com |
+        Phone: +44 20 7946 0000 |
+        Copyright &copy; 2026 My Portfolio
+
+    </footer>
+
+</body>
+
+</html>
